@@ -19,4 +19,12 @@ Simulation of:
 
 ## Project Structure
 
-...
+✔ Source Generation
+
+✔ Source Extension
+
+✔ Huffman Source Coding
+
+✔ Huffman Decoding
+
+✔ Unit Tests
