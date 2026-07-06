@@ -32,12 +32,10 @@ public class HuffmanDecoder {
         for (int i = 0; i < bits.length(); i++) {
             char bit = bits.charAt(i);
 
-            if (bit == '0') {
-                current = current.getLeft();
-            } else if (bit == '1') {
-                current = current.getRight();
-            } else {
-                throw new IllegalArgumentException("Invalid bit: " + bit);
+            switch (bit) {
+                case '0' -> current = current.getLeft();
+                case '1' -> current = current.getRight();
+                default -> throw new IllegalArgumentException("Invalid bit: " + bit);
             }
 
             if (current == null) {
@@ -50,6 +48,11 @@ public class HuffmanDecoder {
             }
         }
 
+        if (current != tree.root()) {
+            throw new IllegalArgumentException(
+                    "Incomplete Huffman code."
+            );
+        }
         return new SourceSequence(symbols);
     }
 }

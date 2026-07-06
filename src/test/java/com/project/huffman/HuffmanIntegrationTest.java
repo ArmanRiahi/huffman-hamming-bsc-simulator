@@ -1,14 +1,15 @@
 package com.project.huffman;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.List;
+
 import com.project.binary.BinarySequence;
 import com.project.source.SourceGenerator;
 import com.project.source.SourceSequence;
 import com.project.source.SymbolProbability;
+
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class HuffmanIntegrationTest {
 
