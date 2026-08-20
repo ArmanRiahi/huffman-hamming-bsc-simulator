@@ -28,3 +28,6 @@ Simulation of:
 ✔ Huffman Decoding
 
 ✔ Unit Tests
+
+## Status
+In Progress
